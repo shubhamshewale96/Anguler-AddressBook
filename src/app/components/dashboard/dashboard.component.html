@@ -1,0 +1,37 @@
+<app-header></app-header><div class="bg-color">
+<div class="main-content">
+    <div class="form-header">
+        <div class="person-details-text">Person Details</div>
+        <div >
+            <a class="add-user" routerLink="/add-person"> <img src="../../../assets/add-24px.svg" alt="Add User">Add Person</a>
+        </div>
+    </div>
+
+    <div class="person-detail-table">
+        <table class="table-main">
+            <tr>
+                <th>Fullname</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip Code</th>
+                <th>Phone Number</th>
+                <th></th>
+            </tr>
+
+            <tr *ngFor="let person of personList">
+                <td>{{person.name}} </td>
+                <td> {{person.address}}</td>
+                <td>{{person.city}} </td>
+                <td>{{person.state}} </td>
+                <td>{{person.zipcode}} </td>
+                <td>{{person.mobileNo}} </td>
+                <td>
+                   <a href="" (click)="onDelete(person.id)"><img src="../../../assets/delete.svg" alt=""></a> <a routerLink="/update-person/{{person.id}}"> <img src="assets/edit.svg" alt=""></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+</div>

@@ -1,0 +1,31 @@
+.container{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10vw;
+    align-items: center;
+}
+
+.logo-image{
+    width: 43px;
+    height: 43px;
+}
+
+.address{
+    text-align: left;
+font: normal normal bold 22px/25px Montserrat;
+letter-spacing: 0px;
+color: #008CFF;
+text-transform: uppercase;
+}
+
+.book{
+    text-align: left;
+font: normal normal bold 22px/25px Montserrat;
+letter-spacing: 0px;
+color: #42515F;
+text-transform: uppercase;
+}

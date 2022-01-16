@@ -1,0 +1,62 @@
+<app-header></app-header>
+<div class="add-person">
+    <div class="container">
+        <form #addPerson="ngForm" (ngSubmit)="onSubmit()">
+            <div class="form-header">
+                <div class="heading">PERSON ADDRESS FORM</div>
+            </div>
+            <div class="form-content">
+                <div class="full-name">
+                    <label for="fullName" class="label">Full Name</label> <br>
+                    <input type="text" id="fullName" class="input" name="fullName" [(ngModel)]="person.name">
+                </div>
+                <div class="phone-number">
+                    <label for="phoneNumber" class="label">Phone Number</label> <br>
+                    <input type="text" id="phoneNumber" class="input" name="phoneNumber" [(ngModel)]="person.mobileNo">
+                </div>
+
+                <div class="address">
+                    <label for="address" class="label">Address</label> <br>
+                    <textarea name="address" id="address" rows="6" class="text-area" [(ngModel)]="person.address"></textarea>
+                </div>
+
+                <div class="city-state">
+                    <div class="city">
+                        <label for="city" class="label">City</label> <br>
+                        <select name="city" id="city" class="drop-down" [(ngModel)]="person.city">
+                            <option value="">Select City</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Navi Mumbai">Navi Mumbai</option>
+                        </select>
+                    </div>
+
+                    <div class="state">
+                        <label for="state" class="label">State</label> <br>
+                        <select name="state" id="state" class="drop-down" [(ngModel)]="person.state">
+                            <option value="">Select State</option>
+                            <option value="Maharshtra">Maharshtra</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                        </select>
+                    </div>
+
+                    <div class="zip-code">
+                        <label for="zip" class="label">Zip Code</label> <br>
+                        <input type="number" class="drop-down zip" name="zipCode" [(ngModel)]="person.zipcode"> 
+                    </div>
+                </div>
+
+                <div class="button-parent">
+                    <div class="button">
+                        <button type="submit" class="btn">Add</button>
+                        <button type="reset" class="btn">Reset</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </form>
+
+
+    </div>
+</div>
